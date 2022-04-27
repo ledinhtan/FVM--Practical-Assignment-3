@@ -1,6 +1,6 @@
-function [A]=maTranLapGhep(a,b,c,d,j,N1)
+function [A]=stiffnessMatrix(a,b,c,d,j,N1)
 %---------------------------------------------------------
-%Tao ma tran A
+%Create the A matrix
 %--------------------------------------------------------- 
 for i=1:N1
     if i==1
