@@ -1,4 +1,4 @@
-function [Ai,Ci,Di]=maTranLapGhep(a,b,c,d,j,N1)
+function [Ai,Ci,Di]=stiffnessMatrix(a,b,c,d,j,N1)
 Ai=zeros(N1);
 Ci =zeros(N1);
 Di =zeros(N1);
