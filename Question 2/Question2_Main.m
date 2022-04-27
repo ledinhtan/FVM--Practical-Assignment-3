@@ -87,7 +87,7 @@ for jj=1:M
   
    A=sparse(Nx*Ny); 
     for j=1:Ny
-        [A1] = maTranLapGhep(a,b,c,d,j,Nx,Ny)
+        [A1] = stiffnessMatrix(a,b,c,d,j,Nx,Ny)
         if(j==1)    
             A((j-1)*Nx+1:j*Nx,(j-1)*Nx+1:j*Nx)=A1;
             A((j-1)*Nx+1:j*Nx,j*Nx+1:(j+1)*Nx)=-d(1)*eye(Nx);
