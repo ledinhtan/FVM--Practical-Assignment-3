@@ -84,7 +84,7 @@ for jj=1:M
     % Creare the Matrix
     A=sparse(N1*N2);
     for i=1:N2
-        [Ai,Ci,Di]=maTranLapGhep(a,b,c,d,i,N1);
+        [Ai,Ci,Di]=stiffnessMatrix(a,b,c,d,i,N1);
         if i==1
             A((i-1)*N1+1:N1,i*1:N1)=Ai;
             A((i-1)*N1+1:N1,(N1 +1):2*N1)=Di;
