@@ -86,7 +86,7 @@ for jj=1:M
     % Creare the matrix A
     A=sparse(Nx*Ny);
     
-    A(1:Nx,1:Nx)=maTranLapGhep(a,b,c,d,1,Nx);
+    A(1:Nx,1:Nx)=stiffnessMatrix(a,b,c,d,1,Nx);
     A(1:Nx,Nx+1:2*Nx)= -d(1)*eye(Nx);
   
     A((Ny-1)*Nx+1:Ny*Nx,(Ny-1)*Nx+1:Ny*Nx)=maTranLapGhep(a,b,c,d,Ny,Nx);
