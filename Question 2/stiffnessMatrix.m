@@ -1,4 +1,4 @@
-function [A] = maTranLapGhep(a,b,c,d,j,Nx,Ny)
+function [A] = stiffnessMatrix(a,b,c,d,j,Nx,Ny)
 A=zeros(Nx);
 %Create matrix A1 
     if j == 1
